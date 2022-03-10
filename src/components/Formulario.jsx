@@ -20,19 +20,19 @@ const Formulario = ({setBusqueda}) => {
           })
       }  
       setBusqueda(nombre.trim().toLowerCase())
-    reset()
+      reset()
   }
   return (
-    <form onSubmit={handleSubmit}>
-        <input type="text" 
-        placeholder='Ingrese personaje'
-        className='form-control mb-2'
-        value={nombre}
-        onChange={handleChange}
-        name="nombre"
+      <form onSubmit={handleSubmit}>
+        <input type="text"
+          placeholder='Ingrese personaje'
+          className='form-control mb-2'
+          value={nombre}
+          onChange={handleChange}
+          name="nombre"
         />
         <button className="btn-dark btn" type='submit'>Buscar</button>
-    </form>
+      </form>
   )
 }
 
